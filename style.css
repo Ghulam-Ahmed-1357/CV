@@ -64,7 +64,7 @@ h2 {
 
 .education h2 {
     padding: 0.5rem;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 p {
@@ -118,7 +118,7 @@ p {
 /* Mobile Styles for smaller screens */
 @media (max-width: 768px) {
     .navibar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         height: auto;
         flex-wrap: wrap;
