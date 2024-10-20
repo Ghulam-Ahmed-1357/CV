@@ -1,0 +1,168 @@
+.navibar {
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    height: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navibar li {
+    margin-right: 30px;
+}
+
+.navibar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navibar li a:hover {
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+a {
+    color: blue;
+
+}
+
+a:focus {
+    outline: 2px solid #FFD700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 3.5vw;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+
+h2 {
+    font-size: 2.5vw;
+    background-color: #3498DB;
+    color: #FFF;
+}
+
+.education h2 {
+    padding: 0.5rem;
+    margin: 3rem;
+}
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.basic-info,
+.contact-info,
+.skills,
+.education,
+.experience,
+.portfolio {
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basic-info h1,
+.contact-info h1,
+.skills h1,
+.education h1,
+.experience h1,
+.portfolio h1 {
+    color: #2980B9;
+}
+
+.portfolio a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.portfolio a:hover {
+    color: #E74C3C;
+    text-decoration: underline;
+}
+
+.portfolio li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio li:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480) {
+    .navibar {
+        flex-direction: row;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .navibar li {
+        margin: 5px 0;
+    }
+
+    .basic-info,
+    .contact-info,
+    .skills,
+    .education,
+    .experience,
+    .portfolio {
+        padding: 10px;
+    }
+}
+
+.skills ul,
+.portfolio ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills ul li,
+.portfolio ul li {
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+
+    .basic-info,
+    .contact-info,
+    .skills,
+    .education,
+    .experience,
+    .portfolio {
+        padding: 5px;
+        margin: 10px auto;
+    }
+}
