@@ -1,3 +1,4 @@
+/* General Styles */
 .navibar {
     justify-content: center;
     align-items: center;
@@ -7,6 +8,8 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    /* Ensure it wraps if necessary */
 }
 
 .navibar li {
@@ -25,12 +28,10 @@
 .navibar li a:hover {
     color: #FFD700;
     text-shadow: 2px 2px 4px #000000;
-
 }
 
 a {
     color: blue;
-
 }
 
 a:focus {
@@ -65,7 +66,6 @@ h2 {
     padding: 0.5rem;
     margin: 3rem;
 }
-
 
 p {
     line-height: 1.6;
@@ -115,46 +115,24 @@ p {
     transform: scale(1.05);
 }
 
-@media (max-width: 480) {
+/* Mobile Styles for smaller screens */
+@media (max-width: 768px) {
     .navibar {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         height: auto;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
+        flex-wrap: wrap;
+        padding: 10px;
     }
 
     .navibar li {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
-    .basic-info,
-    .contact-info,
-    .skills,
-    .education,
-    .experience,
-    .portfolio {
-        padding: 10px;
+    .navibar li a {
+        font-size: 16px;
+        /* Increase text size for better readability */
     }
-}
-
-.skills ul,
-.portfolio ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.skills ul li,
-.portfolio ul li {
-    padding: 5px 0;
-}
-
-@media (max-width: 768px) {
 
     .basic-info,
     .contact-info,
@@ -165,4 +143,48 @@ p {
         padding: 5px;
         margin: 10px auto;
     }
+
+    h1 {
+        font-size: 2rem;
+        /* Adjusted h1 size for tablet/mobile */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        /* Adjusted h2 size for tablet/mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        /* Further adjust for smaller phones */
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        /* Further adjust for smaller phones */
+    }
+
+    .basic-info,
+    .contact-info,
+    .skills,
+    .education,
+    .experience,
+    .portfolio {
+        padding: 10px;
+        /* Increase padding for mobile readability */
+    }
+}
+
+/* Skills and Portfolio List Styles */
+.skills ul,
+.portfolio ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills ul li,
+.portfolio ul li {
+    padding: 5px 0;
 }
