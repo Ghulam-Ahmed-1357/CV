@@ -119,7 +119,7 @@ p {
 @media (max-width: 768px) {
     .navibar {
         flex-direction: row;
-        align-items: center;
+        /* align-items: center; */
         width: auto;
         height: auto;
         flex-wrap: wrap;
